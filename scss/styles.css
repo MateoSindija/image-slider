@@ -49,12 +49,11 @@
 .container__images__bottom {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   margin-top: 5px;
   max-height: 200px;
 }
 .container__images__bottom__imagesContainer {
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
@@ -83,7 +82,7 @@
   }
 }
 .container__images__bottom__buttonContainer {
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

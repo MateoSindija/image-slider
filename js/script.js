@@ -21,13 +21,14 @@ $(document).ready(() => {
         ".container__images__bottom__imagesContainer img"
     );
 
+    const topRow = $(".container__images__top");
+    const bottomRow = $(".container__images__bottom__imagesContainer");
+
     $(".container__images__bottom__buttonContainer__left").on("click", () => {
         const firstTop = $(".container__images__top img").first();
         const firstBottom = $(
             ".container__images__bottom__imagesContainer img"
         ).first();
-        const topRow = $(".container__images__top");
-        const bottomRow = $(".container__images__bottom__imagesContainer");
 
         const firstTopWidth = firstTop.width();
         const firstBottomWidth = firstBottom.width();
@@ -44,8 +45,6 @@ $(document).ready(() => {
         const lastBottom = $(
             ".container__images__bottom__imagesContainer img"
         ).last();
-        const topRow = $(".container__images__top");
-        const bottomRow = $(".container__images__bottom__imagesContainer");
 
         const lastTopWidth = lastTop.width();
         const lastBottomWidth = lastBottom.width();
