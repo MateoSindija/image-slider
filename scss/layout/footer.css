@@ -1,0 +1,9 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 100px;
+  width: calc(100% + 16px);
+  background-color: #dddddd;
+  margin: 60px -8px -8px -8px;
+  border-radius: 5px 5px 0 0;
+}/*# sourceMappingURL=footer.css.map */

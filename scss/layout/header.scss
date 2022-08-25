@@ -1,0 +1,11 @@
+@import "../abstracts/variables.scss";
+
+.header {
+  position: relative;
+  top: 0;
+  width: calc(100% + 16px);
+  height: 100px;
+  background-color: $footer-header-background;
+  margin: -8px -8px 60px -8px;
+  border-radius: 0 0 5px 5px;
+}

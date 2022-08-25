@@ -1,0 +1,92 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
+
+.container__images__top,
+.container__images__bottom__imagesContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.container__images__bottom__buttonContainer,
+.container__text {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: auto;
+  max-width: 940px;
+
+  img:last-of-type {
+    margin-right: 0;
+  }
+
+  &__images {
+    width: 70%;
+
+    &__top {
+      max-height: $image-height;
+      margin: 0 0 5px 5px;
+
+      img {
+        @include image();
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      margin-top: 5px;
+      max-height: $image-height;
+
+      &__imagesContainer {
+        width: 80%;
+        margin-left: 5px;
+
+        img {
+          @include image();
+        }
+      }
+
+      &__buttonContainer {
+        width: 100px;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        margin-left: auto;
+
+        &__left {
+          @include button--left();
+        }
+
+        &__right {
+          @include button--right();
+        }
+      }
+    }
+  }
+
+  &__text {
+    max-width: 300px;
+    padding-left: 20px;
+
+    &__title {
+      color: $header-color;
+      font-size: 32px;
+      font-weight: 700;
+      font-family: $font-type;
+      line-height: 38px;
+      margin-bottom: 20px;
+    }
+
+    &__body {
+      color: $body-color;
+      font-family: $font-type;
+    }
+  }
+}
