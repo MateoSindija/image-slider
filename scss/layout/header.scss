@@ -3,9 +3,9 @@
 .header {
   position: relative;
   top: 0;
-  width: calc(100% + 16px);
+  width: $container-width;
   height: 100px;
   background-color: $footer-header-background;
-  margin: -8px -8px 60px -8px;
+  margin: -8px -8px 60px auto;
   border-radius: 0 0 5px 5px;
 }
